@@ -24,5 +24,8 @@
       "flowVersion": "0.53"
     },
     "propWrapperFunctions": ["forbidExtraProps"]
+  },
+  "rules": {
+    "react/prop-types": "off"
   }
 }

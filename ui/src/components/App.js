@@ -1,25 +1,35 @@
-import React from "react";
+import React, { Component } from "react";
 import { BrowserRouter, Route } from "react-router-dom";
+import { connect } from "react-redux";
 
-const Landing = () => {
-  return (
-    <div>
-      <div>Express/React App Boilerplate</div>
-      <a href="/api/test-proxy">Test Proxy</a>
-    </div>
-  );
-};
+import { testApi } from "../actions";
 
-const App = () => {
-  return (
-    <div>
-      <BrowserRouter>
-        <div>
-          <Route path="/" component={Landing} />
-        </div>
-      </BrowserRouter>
-    </div>
-  );
-};
+const Landing = () => <div>Express/React App Boilerplate</div>;
 
-export default App;
+class App extends Component {
+  componentDidMount() {
+    this.props.testApi();
+  }
+
+  render() {
+    return (
+      <div>
+        <BrowserRouter>
+          <div>
+            <Route path="/" component={Landing} />
+          </div>
+        </BrowserRouter>
+        <div>API Works?: {this.props.test ? "YES!" : "NO!"}</div>
+      </div>
+    );
+  }
+}
+
+function mapStateToProps({ test }) {
+  return { test };
+}
+
+export default connect(
+  mapStateToProps,
+  { testApi }
+)(App);
