@@ -16,7 +16,7 @@ class Landing extends Component {
 
         <div>
           {strings.TestComponent.api_works}{" "}
-          <span style={{ "text-transform": "uppercase" }}>
+          <span style={{ textTransform: "uppercase" }}>
             {this.props.test ? strings.yes : strings.no}
           </span>
         </div>
