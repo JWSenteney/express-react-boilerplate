@@ -1,0 +1,14 @@
+{
+  "boilerplate": "Express/React App Boilerplate",
+  "yes": "yes",
+  "no": "no",
+
+  "TestComponent": {
+    "api_works": "API Works?:",
+    "qbf": {
+      "the_quick_brown": "The quick brown {0} jumped over the lazy {1}",
+      "fox": "fox",
+      "dog": "dog"
+    }
+  }
+}
