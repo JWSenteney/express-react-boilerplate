@@ -1,0 +1,8 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:JWSenteney/express-react-boilerplate.git",
+  "author": "Jacob W Senteney",
+  "license": "MIT"
+}
