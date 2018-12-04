@@ -20,7 +20,8 @@
     "endOfLine": "lf"
   },
   "scripts": {
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "start": "node index.js"
   },
   "devDependencies": {
     "eslint": "^5.9.0",
@@ -30,5 +31,8 @@
     "husky": "^1.2.0",
     "lint-staged": "^8.1.0",
     "prettier": "^1.15.3"
+  },
+  "dependencies": {
+    "express": "^4.16.4"
   }
 }
