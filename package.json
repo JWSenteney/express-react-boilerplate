@@ -14,22 +14,33 @@
       "prettier --write",
       "git add"
     ],
-    "*.md": [
+    "*.{css,md}": [
       "prettier --write",
+      "git add"
+    ],
+    "client/*.{js,json}": [
+      "yarn lintfix-client",
+      "git add"
+    ],
+    "server/*.{js,json}": [
+      "yarn lintfix-server",
       "git add"
     ]
   },
   "prettier": {
     "endOfLine": "lf"
+
+
+
   },
   "scripts": {
     "dev": "concurrently \"yarn dev-server\" \"yarn dev-client\"",
     "dev-client": "yarn --cwd client start",
     "dev-server": "yarn --cwd server dev",
-    "lint": "yarn lint-client; yarn lint-server",
+    "lint": "yarn lint-client .; yarn lint-server .",
     "lint-client": "yarn --cwd client lint",
     "lint-server": "yarn --cwd server lint",
-    "lintfix": "yarn lintfix-client; yarn lintfix-server",
+    "lintfix": "yarn lintfix-client .; yarn lintfix-server .",
     "lintfix-client": "yarn --cwd client lintfix",
     "lintfix-server": "yarn --cwd server lintfix",
     "test": "yarn test-client; yarn test-server",
