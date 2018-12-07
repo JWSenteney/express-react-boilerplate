@@ -4,9 +4,6 @@
   "private": true,
   "prettier": {
     "endOfLine": "lf"
-
-
-
   },
   "scripts": {
     "start": "react-scripts start",
@@ -15,7 +12,7 @@
     "eject": "react-scripts eject",
     "lint": "eslint",
     "lintfix": "eslint --fix"
-          },
+  },
   "browserslist": [
     ">0.2%",
     "not dead",

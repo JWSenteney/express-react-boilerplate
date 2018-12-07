@@ -18,20 +18,23 @@
       "prettier --write",
       "git add"
     ],
-    "client/*.{js,json}": [
+    "client/**/*.json": [
+      "prettier --write"
+    ],
+    "client/**/*.{js,json}": [
       "yarn lintfix-client",
       "git add"
     ],
-    "server/*.{js,json}": [
+    "server/**/*.json": [
+      "prettier --write"
+    ],
+    "server/**/*.{js,json}": [
       "yarn lintfix-server",
       "git add"
     ]
   },
   "prettier": {
     "endOfLine": "lf"
-
-
-
   },
   "scripts": {
     "dev": "concurrently \"yarn dev-server\" \"yarn dev-client\"",

@@ -5,9 +5,6 @@
   "license": "MIT",
   "prettier": {
     "endOfLine": "lf"
-
-
-
   },
   "scripts": {
     "dev": "nodemon index.js",
