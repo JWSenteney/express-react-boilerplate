@@ -1,17 +1,17 @@
 {
-  "name": "ui",
+  "name": "client",
   "version": "0.1.0",
   "private": true,
   "prettier": {
     "endOfLine": "lf"
   },
   "scripts": {
-    "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint",
-    "lintfix": "eslint --fix"
+    "lintfix": "eslint --fix",
+    "start": "react-scripts start",
+    "test": "react-scripts test"
   },
   "browserslist": [
     ">0.2%",
