@@ -1,3 +1,7 @@
+import "foundation-sites/dist/css/foundation.min.css";
+import $ from "jquery";
+import Foundation from "foundation-sites";
+
 import React from "react";
 import ReactDOM from "react-dom";
 import { Provider } from "react-redux";
@@ -6,6 +10,9 @@ import reduxThunk from "redux-thunk";
 
 import reducers from "./reducers";
 import App from "./components/App";
+
+Foundation.addToJquery($);
+$(document).foundation();
 
 const store = createStore(reducers, {}, applyMiddleware(reduxThunk));
 

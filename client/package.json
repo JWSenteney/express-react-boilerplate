@@ -29,7 +29,9 @@
   },
   "dependencies": {
     "axios": "^0.18.0",
+    "foundation-sites": "^6.5.1",
     "http-proxy-middleware": "^0.19.1",
+    "jquery": "^3.3.1",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
     "react-localization": "^1.0.13",
