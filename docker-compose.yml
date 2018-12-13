@@ -10,6 +10,10 @@ services:
   server:
     image: boilerplate-server
     build: ./server
+    volumes:
+      - ./server:/server:ro
   client:
     image: boilerplate-client
     build: ./client
+    volumes:
+      - ./client/build:/client/build:ro
