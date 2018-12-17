@@ -4,7 +4,7 @@ module.exports = {
   // DON'T FORGET TO UPDATE dev.template.js WITH CHANGES
   // Addresses/hostnames/URLs for servers we use
   environment: {
-    mongoURI: "mongodb://dev:asdf99@localhost:27017/this-app" // example
+    mongoURI: "mongodb://localhost:27017/app"
   },
 
   // DON'T FORGET TO UPDATE dev.template.js WITH CHANGES

@@ -10,10 +10,18 @@ services:
   server:
     image: boilerplate-server
     build: ./server
+    environment:
+      - MONGO_URI=mongodb://db:27017/app
     volumes:
       - ./server:/server:ro
   client:
     image: boilerplate-client
     build: ./client
     volumes:
-      - ./client/build:/client/build:ro
+      - ./client/build:/client/build
+  db:
+    image: mongo:4
+    volumes:
+      - app-db:/data/db
+volumes:
+  app-db:
